@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+
+.fondoNegro {
+    background-color: #000;
+}
+
+@for $i from 6 through 9 {
+    mt-#{$i} {
+        margin-top: 1rem*$i;
+    }
+    mb-#{$i} {
+        margin-bottom: 1rem*$i;
+    }
+}

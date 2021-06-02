@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walton Bakery - Tienda Online</title>
+    <meta name="description" content="Compra en nuestra pagina y te lo llevamos a tu casa sin cargo">
+    <meta name="keywords" content="tienda online, comprar, panes, laminados, tortas, macarons, medialunas, pasteleria.">
+    <meta name="author" content="Germán Walton">
+    <!-- Template tienda -->
+    <!-- <link rel="stylesheet" href="css/template_tienda/bootstrap.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/template_tienda/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/template_tienda/style.css" type="text/css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fondoNegro flex-column align-items-center flex-lg-row ">
+            <a class="navbar-brand p-3" href="index.html"><img src="img/logo.svg" alt="logotipo"></a>
+            <button class="navbar-toggler mt-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-uppercase text-center ">
+                    <li class="nav-item">
+                        <a class="nav-link text-white mt-2 mt-md-0" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="tienda_online.html">Tienda Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="tienda--bgimage"></div>
+    <main>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="breadcrumb__text">
+                            <h2>Tienda</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Tienda Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb Fin -->
+
+        <!-- Shop Section Begin -->
+        <section class="shop spad">
+            <div class="container">
+                <div class="shop__option">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="shop__option__search">
+                                <form action="#">
+                                    <select>
+                                    <option value="">Categorias</option>
+                                    <option value="">Panes</option>
+                                    <option value="">Laminados</option>
+                                    <option value="">Macarons</option>
+                                    <option value="">Tortas</option>
+                                </select>
+                                    <input type="text" placeholder="Buscar">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5">
+                            <div class="shop__option__right">
+                                <select>
+                                <option value="">Ordenar</option>
+                                <option value="">A to Z</option>
+                                <option value="">1 - 8</option>
+                                <option value="">Nombre</option>
+                            </select>
+                                <a href="#"><i class="fa fa-list"></i></a>
+                                <a href="#"><i class="fa fa-reorder"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/croissant.jpg">
+                                <div class="product__label">
+                                    <span>Croissant</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$150</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/pan_de_chocolate.jpg">
+                                <div class="product__label">
+                                    <span>Pain Au Chocolat</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$150</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/cruffin.jpg">
+                                <div class="product__label">
+                                    <span>Cruffin</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$170</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/danesa.jpg">
+                                <div class="product__label">
+                                    <span>Danesa</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$190</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/medialunas.jpg">
+                                <div class="product__label">
+                                    <span>Medialuna de manteca</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$100</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/chausson.jpg">
+                                <div class="product__label">
+                                    <span>Chausson Aux Pommes</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$100</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/jesuitas.jpg">
+                                <div class="product__label">
+                                    <span>Jesuitas</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$200</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/pan_brioche.jpg">
+                                <div class="product__label">
+                                    <span>Pan Brioche</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$400</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/babka.jpg">
+                                <div class="product__label">
+                                    <span>Pan Babka de chocolate</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$500</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/pan_de_semillas.jpg">
+                                <div class="product__label">
+                                    <span>Pan de semillas y masa madre</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$400</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/pan_de_3sesamos.jpg">
+                                <div class="product__label">
+                                    <span>Pan de 3 sesamos</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$400</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/focaccia.jpg">
+                                <div class="product__label">
+                                    <span>Focaccia</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$700</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/galette.jpg">
+                                <div class="product__label">
+                                    <span>Galette de membrillo, crema de almendra y pistachos</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$1700</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/saint_honore.jpg">
+                                <div class="product__label">
+                                    <span>Torta Saint-Honoré</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$3400</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/selva_negra.jpg">
+                                <div class="product__label">
+                                    <span>Torta Selva Negra</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$3000</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/tarta_ricota.jpg">
+                                <div class="product__label">
+                                    <span>Tarta de Ricota</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$2000</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/macaron_azahar.jpg">
+                                <div class="product__label">
+                                    <span>Macaron de agua de Azahar y ganache de chocolate blanco</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$120</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/macaron_arandano.jpg">
+                                <div class="product__label">
+                                    <span>Macaron de arandanos y wasabi</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$120</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/macaron_pistacho.jpg">
+                                <div class="product__label">
+                                    <span>Macaron de pistacho</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1 text-center">Cantidad</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="product__item__price">$120</div>
+                                <div class="cart_add">
+                                    <a href="#">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="shop__last__option">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="shop__pagination">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#"><span class="arrow_carrot-right"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="shop__last__text">
+                                <p>Mostrando 1-9 de 10 resultados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop Section End -->
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__iconos footer__iconos--black">
+            <div class="footer__iconos--mr">
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+            <div class="footer__iconos--mr">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <!--Template-->
+    <!-- <script src="js/tienda_online/jquery-3.3.1.min.js"></script>
+    <script src="js/tienda_online/bootstrap.min.js"></script> -->
+    <script src="js/tienda_online/jquery.nice-select.min.js"></script>
+    <script src="js/tienda_online/jquery.barfiller.js"></script>
+    <script src="js/tienda_online/jquery.magnific-popup.min.js"></script>
+    <script src="js/tienda_online/jquery.slicknav.js"></script>
+    <script src="js/tienda_online/owl.carousel.min.js"></script>
+    <script src="js/tienda_online/jquery.nicescroll.min.js"></script>
+    <script src="js/tienda_online/main.js"></script>
+</body>
+
+</html>

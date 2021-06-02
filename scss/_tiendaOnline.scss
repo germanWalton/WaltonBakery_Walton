@@ -1,0 +1,15 @@
+.product__item:hover {
+    .product__item__pic {
+        .product__label span {
+            background: rgb(68, 68, 68);
+        }
+    }
+}
+
+.product__item__text {
+    .cart_add {
+        a {
+            border-bottom: 2px solid rgb(68, 68, 68);
+        }
+    }
+}

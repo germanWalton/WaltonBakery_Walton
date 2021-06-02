@@ -1,0 +1,19 @@
+.titulo {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin-top: 10rem;
+}
+
+.background {
+    background-color: #f4f4f4;
+}
+
+@media (min-width: 768px) {
+    .row {
+        margin-top: 10rem;
+    }
+}
