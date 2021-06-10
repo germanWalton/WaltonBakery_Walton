@@ -9,6 +9,7 @@
     <meta name="description" content="Seguinos a través de las redes sociales o dejanos tu mensaje">
     <meta name="keywords" content="mensaje, contacto, email, redes sociales.">
     <meta name="author" content="Germán Walton">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-light fondoNegro flex-column align-items-center flex-md-row ">
             <a class="navbar-brand p-3" href="index.html"><img src="img/logo.svg" alt="logotipo"></a>
-            <button class="navbar-toggler mt-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mt-4 mb-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -52,12 +53,12 @@
 
 
         <main>
-            <section class="mapa">
-                <div class="titulo">
-                    <h4>Contactanos</h4>
-                </div>
-                <!-- Aca iria la Api de Google Maps!! -->
-            </section>
+            <div id="mapid"></div>
+            <div class="titulo">
+                <h4>Contactanos</h4>
+            </div>
+
+
 
             <section>
                 <div class="container">
@@ -92,20 +93,25 @@
             </section>
         </main>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="footer__iconos footer__iconos--black">
             <div class="footer__iconos--mr">
-                <a href="#">
+                <a href="https://instagram.com ">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </div>
             <div class="footer__iconos--mr">
-                <a href="#">
+                <a href="https://facebook.com">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
             </div>
+            <div class="footer__iconos--mr">
+                <a href="https://youtube.com ">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </div>
             <div>
-                <a href="#">
+                <a href="https://gmail.com ">
                     <ion-icon name="mail-outline"></ion-icon>
                 </a>
             </div>
@@ -114,11 +120,31 @@
         </div>
 
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script>
+        let mymap = L.map('mapid').setView([-34.57717518255791, -58.457591117392035], 15);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoiZ2VybWFud2FsdG9uIiwiYSI6ImNrcHBoNWIwYjAya2gyb3BhM3FoejNydDgifQ.5G-7H604GFFx-IT2zAxvFg'
+        }).addTo(mymap);
+        let marker = L.marker([-34.5770782915697, -58.457655815821056]).addTo(mymap);
+        let circle = L.circle([-34.5770782915697, -58.457655815821056], {
+            color: 'black',
+            fillColor: '#000',
+            fillOpacity: 0.5,
+            radius: 300
+        }).addTo(mymap);
+    </script>
 </body>
 
 </html>

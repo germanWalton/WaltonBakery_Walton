@@ -12,9 +12,11 @@
   .footer__iconos a {
     color: #ffff;
     font-size: 1.7rem; }
+    .footer__iconos a :hover {
+      color: #444444; }
 
 .footer__iconos--black a {
-  color: #000; }
+  color: #5e5e5e; }
 
 .footer__iconos--mr {
   margin-right: 2rem; }
@@ -28,13 +30,13 @@
   .footer {
     margin-top: 10rem !important; }
   .footer__iconos a {
-    font-size: 2.5rem; } }
+    font-size: 2rem; } }
 
 @media (min-width: 1024px) {
   .footer {
     margin-top: 20rem !important; }
   .footer__iconos a {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin-right: 2rem; } }
 
 html {
@@ -209,7 +211,7 @@ mb-9 {
 .titulo {
   font-size: 3.2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #5e5e5e;
   text-align: center;
   display: block;
   font-weight: bold;
@@ -224,10 +226,13 @@ mb-9 {
 
 .titulo h4 {
   font-size: 2.2rem;
-  color: #5e5e5e;
+  color: #444444;
   font-weight: 300;
   text-align: center;
-  margin-top: 4rem; }
+  margin: 4rem 2rem; }
+
+#mapid {
+  height: 30vh; }
 
 .home--bgimage {
   height: 100vh; }
@@ -240,10 +245,14 @@ mb-9 {
   background: #444444; }
 
 h1 {
-  color: #444444; }
+  color: #5e5e5e; }
 
 .product__item:hover .product__item__pic .product__label span {
   background: #444444; }
 
 .product__item__text .cart_add a {
   border-bottom: 2px solid #444444; }
+
+.breadcrumb__text h2 {
+  font-size: 3.2rem;
+  color: #5e5e5e; }
