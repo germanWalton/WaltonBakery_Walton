@@ -14,17 +14,12 @@ html {
     box-sizing: inherit;
 }
 
-h2 {
-    color: #d7ccc8;
-    font-size: 4rem;
-}
-
 a {
     text-decoration: none;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $fuentePrincipal;
     font-size: 1.6rem;
 }
 

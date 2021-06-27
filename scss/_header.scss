@@ -13,7 +13,7 @@
     margin-top: 2rem;
 }
 
-//-------------------------
+//Fin de clases de Bootstrap
 .barra {
     text-align: center;
 }
@@ -25,14 +25,6 @@
 
 .contenidoBarra {
     padding: 1rem;
-}
-
-.logo {
-    img {
-        width: 60%;
-        margin-top: 2rem;
-        filter: contrast(50);
-    }
 }
 
 .navegacion {
@@ -56,20 +48,7 @@
     }
 }
 
-@media(min-width:480px) {
-    .logo {
-        img {
-            width: 50%;
-        }
-    }
-}
-
 @media(min-width:600px) {
-    .logo {
-        img {
-            width: 45%;
-        }
-    }
     .navegacion {
         li {
             a {
@@ -88,12 +67,6 @@
     .navMedia {
         display: flex;
     }
-    .logo {
-        img {
-            width: 80%;
-            filter: contrast(50)
-        }
-    }
     .navegacion {
         li {
             a {
@@ -109,11 +82,6 @@
     .barra {
         padding: 1rem;
     }
-    .logo {
-        img {
-            width: 95%;
-        }
-    }
     .navegacion {
         li {
             a {
@@ -121,8 +89,4 @@
             }
         }
     }
-    /*Clase de Bootstrap*/
-    // .nav-link {
-    //     font-size: 2rem;
-    // }
 }
